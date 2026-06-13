@@ -4,185 +4,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Truffle & Scent by LEE brings European gourmet pantry luxuries and elegant fragrance style to the Philippines." />
-  <meta name="theme-color" content="#24180f" />
-  <title>Truffle &amp; Scent by LEE | Gourmet Food &amp; Perfume in the Philippines</title>
+  <meta name="theme-color" content="#17100b" />
+  <title>Truffle &amp; Scent by LEE | Gourmet Food &amp; Perfume</title>
   <link rel="icon" href="assets/favicon.png" />
   <link rel="preload" href="assets/logo.webp" as="image" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="home-page refined-home">
-  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
-  <div class="welcome-curtain" data-welcome-curtain aria-hidden="false">
-    <div class="welcome-mark">
+<body>
+  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
+  <div class="welcome-curtain" data-welcome aria-hidden="false">
+    <div class="welcome-card">
       <img src="assets/logo.webp" alt="" />
-      <span>Truffle &amp; Scent by LEE</span>
-      <small>European gourmet warmth · elegant scent</small>
-      <button class="welcome-enter" type="button" data-welcome-enter>Enter the boutique</button>
+      <h2>Welcome to Truffle&amp;Scent</h2>
+      <p>European gourmet warmth and elegant scent, curated by LEE in the Philippines.</p>
+      <button class="enter-btn" type="button" data-enter-site>Enter the boutique</button>
     </div>
-    <div class="welcome-line"></div>
   </div>
-
   <div class="page-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" data-header>
-    <a class="brand authenticity-stamp" href="index.html" aria-label="Truffle and Scent by Lee home">
-      <img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" />
-      <span>Truffle<span>&amp;</span>Scent</span>
-    </a>
+    <a class="brand" href="./" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">Menu</button>
     <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="./" aria-current="page">Home</a>
       <a href="food.html">Gourmet Pantry</a>
       <a href="perfumes.html">Perfumes</a>
       <a href="#location">Location</a>
     </nav>
     <div class="header-actions" data-sound-control>
-      <button class="sound-toggle header-sound" type="button" data-sound-toggle aria-pressed="false">
-        <span class="sound-icon" aria-hidden="true"></span>
-        <span data-sound-label>Play me</span>
-      </button>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
       <audio data-audio preload="none" src="assets/jingle.wav"></audio>
-      <a class="nav-cta contact-cta" href="contact.html">Contact</a>
+      <a class="contact-cta" href="contact.html">Contact</a>
     </div>
   </header>
-
   <main id="main">
-    <section class="hero home-hero refined-hero" id="top" aria-labelledby="hero-title" data-hero-interactive>
-      <div class="cinematic-bg refined-bg" aria-hidden="true">
-        <span class="bg-orb orb-a"></span>
-        <span class="bg-orb orb-b"></span>
-        <span class="bg-orb orb-c"></span>
-        <span class="scent-trail trail-a"></span>
-        <span class="scent-trail trail-b"></span>
-      </div>
-
+    <section class="hero hero-home" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
         <p class="eyebrow">European gourmet food · elegant perfume · Philippines</p>
-        <h1 id="hero-title">Curated for <span class="title-accent">beautiful</span> tables and elegant everyday moments.</h1>
+        <h1 id="hero-title">Curated for <span class="accent-word">beautiful</span> tables and elegant everyday moments.</h1>
         <p class="hero-lede">Welcome to Truffle &amp; Scent by LEE — a warm boutique collection of European pantry favourites and graceful fragrance pieces, chosen for memorable dinners, thoughtful gifting and a little everyday indulgence.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="food.html">Shop Gourmet Pantry</a>
-          <a class="btn secondary" href="perfumes.html">Explore Perfumes</a>
-        </div>
-        <p class="hero-whisper">Move your cursor gently — the constellation follows behind the page.</p>
-        <ul class="trust-list" aria-label="Brand qualities">
-          <li>Premium European pantry finds</li>
-          <li>Gift-worthy perfume moments</li>
-          <li>Personal ordering with LEE</li>
-        </ul>
+        <div class="hero-actions"><a class="btn primary" href="food.html">Shop Gourmet Pantry</a><a class="btn secondary" href="perfumes.html">Explore Perfumes</a></div>
+        <p class="hero-whisper">The golden constellation moves gently with you as you explore.</p>
+        <ul class="trust-list"><li>Premium European pantry finds</li><li>Gift-worthy perfume moments</li><li>Personal ordering with LEE</li></ul>
       </div>
-
-      <div class="hero-stage constellation-stage reveal" aria-label="Elegant interactive logo animation">
-        <div class="hero-pointer-orb" aria-hidden="true"></div>
-        <canvas class="constellation-canvas" data-constellation-canvas aria-hidden="true"></canvas>
-        <div class="constellation-centre" aria-hidden="true">
-          <img src="assets/logo.webp" alt="" />
-          <span>Authentic · Curated · Giftable</span>
-        </div>
+      <div class="particle-stage reveal" aria-label="Animated Truffle and Scent logo constellation">
+        <canvas class="hero-particle-canvas" data-particles="hero" aria-hidden="true"></canvas>
+        <div class="logo-core"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Authentic · Curated · Giftable</span></div>
       </div>
     </section>
-
-    <section class="intro-strip reveal" aria-label="Ordering highlights">
-      <article>
-        <strong>For your table</strong>
-        <span>Truffle sauces, oils, pasta, pesto and gourmet pantry favourites</span>
-      </article>
-      <article>
-        <strong>For gifting</strong>
-        <span>Food and fragrance pieces chosen with warmth and style</span>
-      </article>
-      <article>
-        <strong>Direct ordering</strong>
-        <span>WhatsApp / Viber: +63 956 533 1521</span>
-      </article>
-    </section>
-
-    <section class="section split-feature" aria-labelledby="edits-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Choose your experience</p>
-        <h2 id="edits-title">From the pantry to the perfume tray.</h2>
-        <p>Whether you are planning dinner, choosing a gift, or looking for a finishing touch before you step out, each side of the collection has its own distinct mood.</p>
-      </div>
-      <div class="edit-grid refined-grid">
-        <article class="edit-card reveal tilt-card">
-          <img src="assets/meal-truffle-risotto.webp" alt="Creamy truffle risotto" loading="lazy" />
-          <div>
-            <p class="eyebrow">Gourmet Pantry</p>
-            <h3>Cook with warmth, flavour and a little ceremony</h3>
-            <p>Bring home truffle sauces, olive oils, pasta, pesto and gourmet pantry favourites that help simple cooking feel generous, polished and memorable.</p>
-            <a class="text-link" href="food.html">Shop gourmet pantry</a>
-          </div>
-        </article>
-        <article class="edit-card reveal tilt-card fragrance-card">
-          <img src="assets/perfume-silk-bottle.webp" alt="Luxury perfume bottle on silk" loading="lazy" />
-          <div>
-            <p class="eyebrow">Perfumes</p>
-            <h3>Discover a softer, more personal luxury</h3>
-            <p>Explore graceful perfume styling for dressing tables, gifts and the private rituals that make getting ready feel special.</p>
-            <a class="text-link" href="perfumes.html">Explore perfumes</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section signature-section" aria-labelledby="signature-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Signature moments</p>
-        <h2 id="signature-title">Thoughtful, giftable and full of atmosphere.</h2>
-        <p>Choose a truffle-led dinner, a beautifully prepared table, or a softly elegant perfume moment — all from one warm, curated brand.</p>
-      </div>
-      <div class="signature-grid">
-        <article class="signature-card reveal"><img src="assets/meal-truffle-toast.webp" alt="Truffle toast and appetisers" loading="lazy" /><div><h3>For intimate dinners</h3><p>Rich pantry ingredients for evenings that deserve a little more than ordinary.</p></div></article>
-        <article class="signature-card reveal"><img src="assets/perfume-founder-bottle.webp" alt="Elegant perfume held for gifting" loading="lazy" /><div><h3>For elegant gifting</h3><p>Beautiful finds for hosts, birthdays, thank-yous and thoughtful gestures.</p></div></article>
-        <article class="signature-card reveal"><img src="assets/meal-cheese-truffle-board.webp" alt="Cheese and truffle board" loading="lazy" /><div><h3>For gatherings at home</h3><p>Create a polished spread with ready-to-pair pantry pieces and flavourful accents.</p></div></article>
-      </div>
-    </section>
-
-    <section class="section story-section" aria-labelledby="story-title">
-      <div class="story-media reveal"><img src="assets/catalogue.webp" alt="Truffle &amp; Scent product catalogue" loading="lazy" /></div>
-      <div class="story-copy reveal">
-        <p class="eyebrow">Curated by LEE</p>
-        <h2 id="story-title">Ask for what you are cooking, gifting or celebrating.</h2>
-        <p>Every order begins with a simple message. LEE can help you choose what is available, what pairs beautifully together and what will feel right for your dinner, gift or personal treat.</p>
-        <p>Whether it is truffle pasta for two, a hostess gift, a pantry bundle or a perfume enquiry, the service is warm, direct and easy.</p>
-      </div>
-    </section>
-
-    <section class="section location-section" id="location" aria-labelledby="location-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Based in the Philippines</p>
-        <h2 id="location-title">Metro Manila delivery focus.</h2>
-        <p>Truffle &amp; Scent by LEE is based in the Philippines, with regular delivery focus around BGC, Makati and Mandaluyong. Message LEE to confirm current availability and delivery timing.</p>
-      </div>
-      <div class="location-grid">
-        <div class="map-card reveal"><div class="real-map"><iframe title="Interactive Metro Manila map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=120.92%2C14.49%2C121.10%2C14.66&amp;layer=mapnik&amp;marker=14.5547%2C121.0244"></iframe><a class="map-open-link" href="https://www.openstreetmap.org/?mlat=14.5547&amp;mlon=121.0244#map=12/14.5547/121.0244" target="_blank" rel="noopener">Open larger map</a></div></div>
-        <aside class="location-copy reveal" data-location-panel>
-          <p class="eyebrow">Regular delivery areas</p>
-          <h3 data-location-title>Metro Manila</h3>
-          <p data-location-copy>Message LEE to arrange delivery and confirm current stock. Regular focus areas include BGC, Makati and Mandaluyong.</p>
-          <div class="location-buttons" aria-label="Delivery area quick notes">
-            <button type="button" data-location-pin data-title="BGC" data-copy="A regular delivery focus for gourmet pantry orders, gifts and dinner-ready selections.">BGC</button>
-            <button type="button" data-location-pin data-title="Makati" data-copy="Ideal for office gifts, dinner ingredients and personal gourmet orders.">Makati</button>
-            <button type="button" data-location-pin data-title="Mandaluyong" data-copy="A regular delivery focus area. Message LEE for timing, availability and order guidance.">Mandaluyong</button>
-          </div>
-          <a class="btn primary" href="contact.html">Contact LEE</a>
-        </aside>
-      </div>
-    </section>
+    <section class="intro-strip reveal"><article><strong>For your table</strong><span>Truffle sauces, oils, pasta, pesto and gourmet pantry favourites</span></article><article><strong>For gifting</strong><span>Food and fragrance pieces chosen with warmth and style</span></article><article><strong>Direct ordering</strong><span>WhatsApp / Viber: +63 956 533 1521</span></article></section>
+    <section class="section"><div class="section-heading reveal"><p class="eyebrow">Choose your experience</p><h2>From the pantry to the perfume tray.</h2><p>Whether you are planning dinner, choosing a gift, or looking for a finishing touch before you step out, each side of the collection has its own distinct mood.</p></div><div class="edit-grid"><article class="edit-card reveal"><img src="assets/meal-truffle-risotto.webp" alt="Creamy truffle risotto" loading="lazy" /><div><p class="eyebrow">Gourmet Pantry</p><h3>Cook with warmth, flavour and a little ceremony</h3><p>Bring home truffle sauces, olive oils, pasta, pesto and gourmet pantry favourites that help simple cooking feel generous and memorable.</p><a class="text-link" href="food.html">Shop gourmet pantry</a></div></article><article class="edit-card reveal"><img src="assets/perfume-silk-bottle.webp" alt="Luxury perfume bottle on silk" loading="lazy" /><div><p class="eyebrow">Perfumes</p><h3>Discover a softer, more personal luxury</h3><p>Explore graceful perfume styling for dressing tables, gifts and the private rituals that make getting ready feel special.</p><a class="text-link" href="perfumes.html">Explore perfumes</a></div></article></div></section>
+    <section class="section"><div class="section-heading reveal"><p class="eyebrow">Signature moments</p><h2>Thoughtful, giftable and full of atmosphere.</h2><p>Choose a truffle-led dinner, a beautifully prepared table, or a softly elegant perfume moment.</p></div><div class="signature-grid"><article class="signature-card reveal"><img src="assets/meal-truffle-toast.webp" alt="Truffle toast and appetisers" loading="lazy" /><div><h3>For intimate dinners</h3><p>Rich pantry ingredients for evenings that deserve a little more than ordinary.</p></div></article><article class="signature-card reveal"><img src="assets/perfume-founder-bottle.webp" alt="Elegant perfume held for gifting" loading="lazy" /><div><h3>For elegant gifting</h3><p>Beautiful finds for hosts, birthdays, thank-yous and thoughtful gestures.</p></div></article><article class="signature-card reveal"><img src="assets/meal-cheese-truffle-board.webp" alt="Cheese and truffle board" loading="lazy" /><div><h3>For gatherings at home</h3><p>Create a polished spread with ready-to-pair pantry pieces and flavourful accents.</p></div></article></div></section>
+    <section class="section story-section"><div class="story-media reveal"><img src="assets/catalogue.webp" alt="Truffle &amp; Scent catalogue" loading="lazy" /></div><div class="story-copy reveal"><p class="eyebrow">Curated by LEE</p><h2>Ask for what you are cooking, gifting or celebrating.</h2><p>Every order begins with a simple message. LEE can help you choose what is available, what pairs beautifully together and what will feel right for your dinner, gift or personal treat.</p><p>Whether it is truffle pasta for two, a hostess gift, a pantry bundle or a perfume enquiry, the service is warm, direct and easy.</p></div></section>
+    <section class="section location-section" id="location"><div class="section-heading reveal"><p class="eyebrow">Based in the Philippines</p><h2>Metro Manila delivery focus.</h2><p>Truffle &amp; Scent by LEE is based in the Philippines, with regular delivery focus around BGC, Makati and Mandaluyong.</p></div><div class="location-grid"><div class="real-map reveal"><iframe title="Interactive Metro Manila map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=120.92%2C14.49%2C121.10%2C14.66&amp;layer=mapnik&amp;marker=14.5547%2C121.0244"></iframe><a class="map-open-link" href="https://www.openstreetmap.org/?mlat=14.5547&amp;mlon=121.0244#map=12/14.5547/121.0244" target="_blank" rel="noopener">Open larger map</a></div><aside class="location-copy reveal"><p class="eyebrow">Regular delivery areas</p><h3 data-location-title>Metro Manila</h3><p data-location-copy>Message LEE to arrange delivery and confirm current stock. Regular focus areas include BGC, Makati and Mandaluyong.</p><div class="location-buttons"><button type="button" data-location-pin data-title="BGC" data-copy="A regular delivery focus for gourmet pantry orders, gifts and dinner-ready selections.">BGC</button><button type="button" data-location-pin data-title="Makati" data-copy="Ideal for office gifts, dinner ingredients and personal gourmet orders.">Makati</button><button type="button" data-location-pin data-title="Mandaluyong" data-copy="A regular delivery focus area. Message LEE for timing, availability and order guidance.">Mandaluyong</button></div><a class="btn primary" href="contact.html">Contact LEE</a></aside></div></section>
+    <section class="order section"><div class="order-card reveal"><p class="eyebrow">Order directly</p><h2>Ready to choose something beautiful?</h2><p>Message LEE for current stock, gourmet pairings, perfume availability, gifts and delivery timing.</p><div class="contact-grid"><a href="https://wa.me/639565331521" target="_blank" rel="noopener"><span>WhatsApp / Viber</span><strong>+63 956 533 1521</strong></a><a href="tel:+639565331521"><span>Call or text</span><strong>0956 533 1521</strong></a><a href="mailto:aileenalvarez443@gmail.com"><span>Email</span><strong>aileenalvarez443@gmail.com</strong></a><a href="https://www.facebook.com/100064140277641/" target="_blank" rel="noopener"><span>Facebook</span><strong>Truffle&amp;Scent by LEE</strong></a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <img src="assets/logo.webp" alt="" />
-    <p>Truffle &amp; Scent by LEE · Gourmet food and elegant scent in the Philippines.</p>
-    <nav aria-label="Footer navigation">
-      <a href="food.html">Gourmet Pantry</a>
-      <a href="perfumes.html">Perfumes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </footer>
-
+  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Gourmet food and elegant scent in the Philippines.</p><nav><a href="food.html">Gourmet Pantry</a><a href="perfumes.html">Perfumes</a><a href="contact.html">Contact</a></nav></footer>
   <script src="script.js"></script>
 </body>
 </html>

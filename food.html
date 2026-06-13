@@ -10,24 +10,24 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
+  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
   <div class="page-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" data-header>
-    <a class="brand authenticity-stamp" href="index.html" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
+    <a class="brand" href="./" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">Menu</button>
     <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a href="index.html">Home</a>
+      <a href="./">Home</a>
       <a href="food.html" aria-current="page">Gourmet Pantry</a>
       <a href="perfumes.html">Perfumes</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions" data-sound-control>
-      <button class="sound-toggle header-sound" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
       <audio data-audio preload="none" src="assets/jingle.wav"></audio>
-      <a class="nav-cta contact-cta" href="contact.html">Contact</a>
+      <a class="contact-cta" href="contact.html">Contact</a>
     </div>
   </header>
 
@@ -35,7 +35,7 @@
     <section class="hero food-hero compact-hero" aria-labelledby="food-title">
       <div class="hero-copy reveal">
         <p class="eyebrow">The gourmet pantry edit</p>
-        <h1 id="food-title">Ingredients with a <span class="title-accent">little ceremony</span>.</h1>
+        <h1 id="food-title">Ingredients with a little ceremony.</h1>
         <p class="hero-lede">Truffle sauces, Italian pantry staples, finishing oils and rich little jars for cooking that feels intimate, generous and restaurant-adjacent — without leaving home.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#products">Shop the selection</a>
@@ -45,7 +45,8 @@
       <div class="hero-stage food-stage reveal" aria-hidden="true">
         <div class="silk-ribbon ribbon-one"></div>
         <figure class="poster-card wide-poster tilt-card"><img src="assets/gourmet-poster.webp" alt="" /></figure>
-        <div class="mini-constellation" data-mini-constellation aria-hidden="true"></div>
+        <figure class="floating-product float-a"><img src="assets/prod-salsa-tartufo-180.webp" alt="" /></figure>
+        <figure class="floating-product float-b"><img src="assets/prod-black-truffle-oil.webp" alt="" /></figure>
       </div>
     </section>
 
@@ -161,7 +162,7 @@
     <a class="btn primary" href="https://wa.me/639565331521" target="_blank" rel="noopener">Ask LEE about this item</a>
   </dialog>
 
-  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · European gourmet warmth in the Philippines.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="perfumes.html">Perfumes</a><a href="#order">Order</a></nav></footer>
+  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · European gourmet warmth in the Philippines.</p><nav aria-label="Footer navigation"><a href="./">Home</a><a href="perfumes.html">Perfumes</a><a href="#order">Order</a></nav></footer>
   <script src="script.js"></script>
 </body>
 </html>

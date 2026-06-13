@@ -10,24 +10,24 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="perfume-page">
-  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
+  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
   <div class="page-glow rose-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" data-header>
-    <a class="brand authenticity-stamp" href="index.html" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
+    <a class="brand" href="./" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">Menu</button>
     <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a href="index.html">Home</a>
+      <a href="./">Home</a>
       <a href="food.html">Gourmet Pantry</a>
       <a href="perfumes.html" aria-current="page">Perfumes</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions" data-sound-control>
-      <button class="sound-toggle header-sound" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
       <audio data-audio preload="none" src="assets/jingle.wav"></audio>
-      <a class="nav-cta contact-cta" href="contact.html">Contact</a>
+      <a class="contact-cta" href="contact.html">Contact</a>
     </div>
   </header>
 
@@ -96,19 +96,19 @@
     <section class="order section" id="order" aria-labelledby="order-title">
       <div class="order-card reveal">
         <p class="eyebrow">Availability by message</p>
-        <h2 id="order-title">Ask LEE about today’s perfume availability</h2>
+        <h2 id="order-title">Ask LEE about the fragrance edit</h2>
         <p>Send a message for fragrance availability, gifting options and local delivery guidance.</p>
         <div class="contact-grid">
           <a href="https://wa.me/639565331521" target="_blank" rel="noopener"><span>WhatsApp / Viber</span><strong>+63 956 533 1521</strong></a>
           <a href="tel:+639565331521"><span>Call or text</span><strong>0956 533 1521</strong></a>
           <a href="mailto:aileenalvarez443@gmail.com"><span>Email</span><strong>aileenalvarez443@gmail.com</strong></a>
-          <a href="index.html#location"><span>Delivery focus</span><strong>Metro Manila area</strong></a>
+          <a href="index.html#location"><span>Delivery focus</span><strong>Philippines · Manila area</strong></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Elegant scent and European gourmet warmth.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="food.html">Gourmet Pantry</a><a href="#order">Order</a></nav></footer>
+  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Elegant scent and European gourmet warmth.</p><nav aria-label="Footer navigation"><a href="./">Home</a><a href="food.html">Gourmet Pantry</a><a href="#order">Order</a></nav></footer>
   <script src="script.js"></script>
 </body>
 </html>
