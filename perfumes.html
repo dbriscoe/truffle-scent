@@ -10,28 +10,32 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="perfume-page">
+  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
   <div class="page-glow rose-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" data-header>
-    <a class="brand" href="index.html" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
+    <a class="brand" href="./" aria-label="Truffle and Scent by Lee home"><img src="assets/logo.webp" alt="Truffle &amp; Scent by LEE logo" /><span>Truffle<span>&amp;</span>Scent</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">Menu</button>
     <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a href="index.html">Home</a>
+      <a href="./">Home</a>
       <a href="food.html">Gourmet Pantry</a>
       <a href="perfumes.html" aria-current="page">Perfumes</a>
-      <a href="#ritual">Ritual</a>
-      <a href="#order">Order</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <a class="nav-cta" href="https://wa.me/639565331521" target="_blank" rel="noopener">Message LEE</a>
+    <div class="header-actions" data-sound-control>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
+      <audio data-audio preload="none" src="assets/jingle.wav"></audio>
+      <a class="contact-cta" href="contact.html">Contact</a>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero perfume-hero compact-hero" aria-labelledby="perfume-title">
       <div class="hero-copy reveal">
         <p class="eyebrow">Luxury fragrance</p>
-        <h1 id="perfume-title">Unveil your hidden elegance.</h1>
+        <h1 id="perfume-title">Unveil your hidden <span class="accent-word">elegance</span>.</h1>
         <p class="hero-lede">A soft, feminine scent story wrapped in silk, rose-gold light and quiet confidence. Designed for the private moment before the evening begins.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#collection">View the collection</a>
@@ -66,7 +70,7 @@
     <section class="section ritual-section" id="ritual" aria-labelledby="ritual-title">
       <div class="section-heading reveal">
         <p class="eyebrow">The ritual</p>
-        <h2 id="ritual-title">Wear it like the last detail</h2>
+        <h2 id="ritual-title">Wear it like the last <span class="accent-word">detail</span></h2>
         <p>Perfume is not only an accessory. It is the soft punctuation at the end of dressing: a private signature, noticed only when someone comes close.</p>
       </div>
       <div class="ritual-grid">
@@ -104,7 +108,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Elegant scent and European gourmet warmth.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="food.html">Gourmet Pantry</a><a href="#order">Order</a></nav></footer>
+  <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Elegant scent and European gourmet warmth.</p><nav aria-label="Footer navigation"><a href="./">Home</a><a href="food.html">Gourmet Pantry</a><a href="#order">Order</a></nav></footer>
   <script src="script.js"></script>
 </body>
 </html>
