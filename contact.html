@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="contact-page refined-home">
-  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
+  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
   <div class="page-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,9 +24,9 @@
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
     <div class="header-actions" data-sound-control>
-      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
+      <button class="sound-toggle header-sound" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
       <audio data-audio preload="none" src="assets/jingle.wav"></audio>
-      <a class="contact-cta" href="contact.html">Contact</a>
+      <a class="nav-cta contact-cta" href="contact.html">Contact</a>
     </div>
   </header>
   <main id="main">
@@ -41,14 +41,14 @@
         </div>
       </div>
       <div class="hero-stage constellation-stage contact-constellation reveal" aria-hidden="true">
-        <canvas class="hero-particle-canvas contact-particle-canvas" data-particles="hero"></canvas>
+        <canvas class="constellation-canvas" data-constellation-canvas></canvas>
         <div class="constellation-centre"><img src="assets/logo.webp" alt="" /><span>Curated in the Philippines</span></div>
       </div>
     </section>
     <section class="section contact-section" aria-labelledby="contact-details-title">
       <div class="section-heading reveal">
         <p class="eyebrow">Order and enquiry details</p>
-        <h2 id="contact-details-title"><span class="accent-word">Warm</span>, direct service by message.</h2>
+        <h2 id="contact-details-title">Warm, direct service by message.</h2>
         <p>Because availability can change, the best way to order is to message LEE directly before confirming delivery.</p>
       </div>
       <div class="contact-detail-grid">
@@ -59,9 +59,9 @@
       </div>
     </section>
     <section class="section contact-info-strip" aria-label="Opening and delivery information">
-      <article class="info-panel reveal"><p class="eyebrow">Opening times</p><h3>Orders by <span class="accent-word">message</span></h3><p>Send enquiries anytime. LEE will reply as soon as possible with current availability, pricing, bundles and delivery guidance.</p></article>
-      <article class="info-panel reveal"><p class="eyebrow">Delivery focus</p><h3>BGC · <span class="accent-word">Makati</span> · Mandaluyong</h3><p>Metro Manila delivery is arranged by message. Please confirm timing before placing your order.</p></article>
-      <article class="info-panel reveal"><p class="eyebrow">Best for</p><h3>Dinners · <span class="accent-word">Gifts</span> · Personal treats</h3><p>Ask for pantry pairings, perfume availability, gift-ready choices and prepared-meal inspiration.</p></article>
+      <article class="info-panel reveal"><p class="eyebrow">Opening times</p><h3>Orders by message</h3><p>Send enquiries anytime. LEE will reply as soon as possible with current availability, pricing, bundles and delivery guidance.</p></article>
+      <article class="info-panel reveal"><p class="eyebrow">Delivery focus</p><h3>BGC · Makati · Mandaluyong</h3><p>Metro Manila delivery is arranged by message. Please confirm timing before placing your order.</p></article>
+      <article class="info-panel reveal"><p class="eyebrow">Best for</p><h3>Dinners · Gifts · Personal treats</h3><p>Ask for pantry pairings, perfume availability, gift-ready choices and prepared-meal inspiration.</p></article>
     </section>
   </main>
   <footer class="site-footer"><img src="assets/logo.webp" alt="" /><p>Truffle &amp; Scent by LEE · Contact, orders and delivery guidance.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="food.html">Gourmet Pantry</a><a href="perfumes.html">Perfumes</a></nav></footer>
