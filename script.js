@@ -27,17 +27,17 @@ function makeTextTargets(width,height,count){
   off.width=Math.max(420,Math.round(width));
   off.height=Math.max(320,Math.round(height));
   ctx.clearRect(0,0,off.width,off.height);
-  const size=Math.min(off.width*.42,off.height*.30);
+  const size=Math.min(off.width*.42,off.height*.25);
   ctx.font=`900 ${size}px Georgia, serif`;
   ctx.textAlign='center';
   ctx.textBaseline='middle';
   ctx.fillStyle='white';
-  ctx.fillText('T&S',off.width*.50,off.height*.78);
+  ctx.fillText('T&S',off.width*.50,off.height*.68);
   const data=ctx.getImageData(0,0,off.width,off.height).data;
   const points=[];
   const step=Math.max(4,Math.round(Math.min(off.width,off.height)/92));
   for(let y=0;y<off.height;y+=step){for(let x=0;x<off.width;x+=step){if(data[(y*off.width+x)*4+3]>80)points.push({x:x/off.width*width,y:y/off.height*height})}}
-  return Array.from({length:count},(_,i)=>points[i%points.length]||{x:width*.5,y:height*.78});
+  return Array.from({length:count},(_,i)=>points[i%points.length]||{x:width*.5,y:height*.68});
 }
 function truffleOffset(i){
   const golden=2.3999632297,a=i*golden,layer=(i%233)/233,r=Math.sqrt(layer);
