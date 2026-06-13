@@ -16,3 +16,7 @@ Upload the folder contents to any static host, such as Netlify, Vercel, Cloudfla
 ## Notes before launch
 
 Confirm live prices, stock, delivery terms and preferred ordering channel with the owner before publishing. The audio is user-triggered rather than autoplaying, which is better for mobile visitors and browser policy compliance.
+
+
+## Custom domain note
+To use a branded web address, configure a custom domain in GitHub Pages and add the required DNS records with your domain registrar. If you stay on GitHub Pages without a custom domain, the public address will remain a github.io URL.

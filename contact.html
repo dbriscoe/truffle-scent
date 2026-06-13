@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="contact-page refined-home">
-  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
+  <canvas class="ambient-canvas" data-particles="ambient" aria-hidden="true"></canvas>
   <div class="page-glow" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,9 +24,9 @@
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
     <div class="header-actions" data-sound-control>
-      <button class="sound-toggle header-sound" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false"><span class="sound-icon" aria-hidden="true"></span><span data-sound-label>Play me</span></button>
       <audio data-audio preload="none" src="assets/jingle.wav"></audio>
-      <a class="nav-cta contact-cta" href="contact.html">Contact</a>
+      <a class="contact-cta" href="contact.html">Contact</a>
     </div>
   </header>
   <main id="main">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="hero-stage constellation-stage contact-constellation reveal" aria-hidden="true">
-        <canvas class="constellation-canvas" data-constellation-canvas></canvas>
+        <canvas class="hero-particle-canvas contact-particle-canvas" data-particles="hero"></canvas>
         <div class="constellation-centre"><img src="assets/logo.webp" alt="" /><span>Curated in the Philippines</span></div>
       </div>
     </section>
