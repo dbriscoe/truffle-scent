@@ -19,6 +19,42 @@ document.querySelectorAll('[data-sound-control]').forEach(control=>{const audio=
 function setMapPin(pin){const iframe=document.querySelector('[data-map-frame]')||document.querySelector('.real-map iframe');const openLink=document.querySelector('[data-map-open]')||document.querySelector('.map-open-link');const lat=pin.dataset.lat,lon=pin.dataset.lon,bbox=pin.dataset.bbox;if(iframe&&lat&&lon&&bbox){iframe.src=`https://www.openstreetmap.org/export/embed.html?bbox=${bbox.replace(/,/g,'%2C')}&layer=mapnik&marker=${lat}%2C${lon}`;}if(openLink&&lat&&lon){openLink.href=`https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=13/${lat}/${lon}`;}}
 const locationPins=document.querySelectorAll('[data-location-pin]');const locationTitle=document.querySelector('[data-location-title]');const locationCopy=document.querySelector('[data-location-copy]');locationPins.forEach(pin=>pin.addEventListener('click',()=>{locationPins.forEach(p=>p.classList.remove('is-active'));pin.classList.add('is-active');if(locationTitle)locationTitle.textContent=pin.dataset.title||'Metro Manila';if(locationCopy)locationCopy.textContent=pin.dataset.copy||'';setMapPin(pin)}));locationPins[0]?.classList.add('is-active');
 
+
+(function renderCentralPrices(){
+  const priceData=window.TRUFFLE_SCENT_PRICES||{};
+  const cards=document.querySelectorAll('[data-product-card], [data-price-id]');
+  cards.forEach(card=>{
+    const key=card.dataset.priceId||(card.id||'').replace(/^prod-/,'');
+    const item=priceData[key];
+    if(!item||item.hidden)return;
+    const price=(item.price||'').trim();
+    const stock=(item.stock||'').trim();
+    if(!price&&!stock)return;
+    card.dataset.price=price;
+    card.dataset.stock=stock;
+    const target=card.matches('.fragrance-item')?(card.querySelector('div')||card):card;
+    let display=target.querySelector('[data-price-display]');
+    if(!display){
+      display=document.createElement('div');
+      display.className='product-price';
+      display.setAttribute('data-price-display','');
+      const action=target.querySelector('button, .text-link, .btn');
+      action?target.insertBefore(display,action):target.appendChild(display);
+    }
+    display.innerHTML='';
+    if(price){
+      const value=document.createElement('strong');
+      value.textContent=price;
+      display.appendChild(value);
+    }
+    if(stock){
+      const badge=document.createElement('span');
+      badge.textContent=stock;
+      display.appendChild(badge);
+    }
+  });
+})();
+
 const dialog=document.querySelector('[data-product-dialog]');const dialogTitle=document.querySelector('[data-dialog-title]');const dialogCopy=document.querySelector('[data-dialog-copy]');const dialogKicker=document.querySelector('[data-dialog-kicker]');const dialogPair=document.querySelector('[data-dialog-pair], [data-dialog-best], [data-dialog-pairings]');const dialogTip=document.querySelector('[data-dialog-tip]');const dialogStorage=document.querySelector('[data-dialog-storage]');document.querySelectorAll('[data-product-card]').forEach(card=>{const btn=card.querySelector('button');btn?.addEventListener('click',()=>{if(!dialog)return;if(dialogKicker)dialogKicker.textContent=card.dataset.kicker||'Product details';if(dialogTitle)dialogTitle.textContent=card.dataset.title||'Product details';if(dialogCopy)dialogCopy.textContent=card.dataset.detail||card.dataset.description||card.dataset.note||'';if(dialogPair)dialogPair.textContent=card.dataset.best||card.dataset.pair||card.dataset.pairings||'Message LEE for pairing guidance.';if(dialogTip)dialogTip.textContent=card.dataset.tip||'Use thoughtfully and taste as you go.';if(dialogStorage)dialogStorage.textContent=card.dataset.storage||'Check pack guidance and store carefully.';dialog.showModal?dialog.showModal():dialog.setAttribute('open','')})});document.querySelector('[data-dialog-close]')?.addEventListener('click',()=>dialog?.close());dialog?.addEventListener('click',event=>{const rect=dialog.getBoundingClientRect();const outside=event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom;if(outside)dialog.close()});
 
 

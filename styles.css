@@ -218,3 +218,11 @@
   .contact-page .constellation-centre img{width:150px!important;height:150px!important;}
   .contact-page .contact-particle-canvas{top:84px!important;left:-55px!important;right:-55px!important;bottom:-45px!important;width:calc(100% + 110px)!important;height:calc(100% - 39px)!important;}
 }
+
+
+/* Central price display, driven by assets/prices.js */
+.product-price{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin:.75rem 0 1rem}
+.product-price strong{font-family:Georgia,serif;font-size:1.35rem;line-height:1;color:var(--gold-light);text-shadow:0 8px 28px rgba(216,164,86,.2)}
+.product-price span{display:inline-flex;align-items:center;min-height:30px;border:1px solid rgba(242,207,140,.28);border-radius:999px;padding:.32rem .65rem;background:rgba(255,255,255,.055);color:var(--cream);font-size:.76rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.fragrance-item .product-price{margin:.65rem 0 .85rem}
+@media (max-width:540px){.product-price strong{font-size:1.22rem}.product-price span{font-size:.68rem}}

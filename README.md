@@ -20,3 +20,19 @@ Confirm live prices, stock, delivery terms and preferred ordering channel with t
 
 ## Custom domain note
 To use a branded web address, configure a custom domain in GitHub Pages and add the required DNS records with your domain registrar. If you stay on GitHub Pages without a custom domain, the public address will remain a github.io URL.
+
+
+## Updating prices and stock text
+
+Prices are now centralised in `assets/prices.js`.
+
+To update the website prices, open `assets/prices.js` and edit only the text inside the quotation marks for each product. For example:
+
+```js
+"salsa-tartufo-180": {
+  price: "₱650",
+  stock: "Available now"
+}
+```
+
+Keep the product key names unchanged, such as `salsa-tartufo-180` and `black-truffle-oil`. The food and perfume pages read from this single file automatically, so ordinary price changes do not require editing the full HTML pages.
