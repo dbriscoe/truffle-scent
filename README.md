@@ -36,3 +36,12 @@ To update the website prices, open `assets/prices.js` and edit only the text ins
 ```
 
 Keep the product key names unchanged, such as `salsa-tartufo-180` and `black-truffle-oil`. The food and perfume pages read from this single file automatically, so ordinary price changes do not require editing the full HTML pages.
+
+
+## Language switch
+
+The site now has a simple EN / Tagalog button in the header. English remains the default HTML copy. Tagalog wording is held in one editable file:
+
+`assets/lang.js`
+
+To adjust a Tagalog phrase, open `assets/lang.js` and edit the matching text inside the `tl` translation list. The visitor's language choice is remembered in the browser, so it stays selected as they move between pages.
